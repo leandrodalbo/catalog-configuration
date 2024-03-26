@@ -1,16 +1,2 @@
 welcome:
   message: Catalog Application running on Prod
-spring:
-  config:
-    import: "optional:configserver:"
-  cloud:
-    config:
-      uri: http://catalog-config
-  datasource:
-    username: user
-    password: password
-    url: jdbc:postgresql://catalog-postgres/catalog
-    hikari:
-      connection-timeout: 2000
-      maximum-pool-size: 5
-      
