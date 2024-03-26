@@ -1,8 +1,8 @@
 welcome:
   message: Catalog Application running on Prod
 spring:
-  profiles:
-    active: prod
+  config:
+    import: "optional:configserver:"
   cloud:
     config:
       uri: http://catalog-config
